@@ -8,9 +8,9 @@ if [ -d "/Applications/$APP_NAME.app" ]
 then
   APP_DIR="/Applications/$APP_NAME.app"
   echo 'Sublime Text 3 application found globally'
-elif [ -d "~/Applications/$APP_NAME.app" ]
+elif [ -d "$HOME/Applications/$APP_NAME.app" ]
 then
-  APP_DIR="~/Applications/$APP_NAME.app"
+  APP_DIR="$HOME/Applications/$APP_NAME.app"
   echo 'Sublime Text 3 application found locally'
 else
   echo 'Sublime Text 3 not installed. Please install it to /Applications folder first.'
